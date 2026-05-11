@@ -36,7 +36,21 @@ buttonh1.addEventListener("mouseout", () => {
 
 // Example 4 -  The impossible Button Demo
 console.log("\nSECTION 4 - The impossible Button Demo");
-// No Code
+
+//  Create Button and move it randomly when mousedover - so can't be clicked!
+const buttonImp = document.querySelector("#impossible");
+console.dir(buttonImp);
+buttonImp.addEventListener("mouseover", () => {
+  console.log("Moused Over Me!");
+  const height = Math.floor(Math.random() * window.innerHeight);
+  const width = Math.floor(Math.random() * window.innerWidth);
+  buttonImp.style.left = `${width}px`;
+  buttonImp.style.top = `${height}px`;
+});
+buttonImp.addEventListener("click", () => {
+  buttonImp.innerText = "You Got Me!";
+  document.body.style.bckgroundColor = "green";
+});
 
 // Example 5 -  Events on Multiple Elements
 console.log("\nSECTION 5 - Events on Multiple Elements");
