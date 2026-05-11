@@ -18,7 +18,21 @@ buttClicker.ondblclick = function () {
 
 // Example 3 -  addEventListener
 console.log("\nSECTION 3 - addEventListener");
-// No Code
+
+//Detect Click on first button and run 3 different functions
+const buttonh1 = document.querySelector("button");
+buttonh1.addEventListener("click", () => {
+  alert("1st - You clicked the button!");
+});
+buttonh1.addEventListener("click", () => {
+  console.log("2nd - You clicked the button!");
+});
+buttonh1.addEventListener("mouseover", () => {
+  buttonh1.innerText = "Stop Hovering Over Me!";
+});
+buttonh1.addEventListener("mouseout", () => {
+  buttonh1.innerText = "Click Me!";
+});
 
 // Example 4 -  The impossible Button Demo
 console.log("\nSECTION 4 - The impossible Button Demo");
