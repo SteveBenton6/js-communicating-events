@@ -83,6 +83,33 @@ const keyPress = document.body.addEventListener("keypress", (e) => {
 // Example 7 -  Key Events: keypress, keyup & keydown
 console.log("\nSECTION 7 - Key Events: keypress, keyup & keydown");
 
+// Detect key events on the username Input
+const input = document.querySelector("#username");
+input.addEventListener("keydown", function (e) {
+  console.log("Key Down!");
+});
+input.addEventListener("keyup", function (e) {
+  console.log("Key Up!");
+});
+input.addEventListener("keypress", function (e) {
+  console.log("Key Press!");
+});
+
+// Collect & Display items added to Shopping List Input
+const addItemInput = document.querySelector("#addItem");
+const itemsUL = document.querySelector("#items");
+
+addItemInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    if (!this.value) return;
+    const newListItem = this.value;
+    const newItem = document.createElement("li");
+    newItem.innerText = newListItem;
+    itemsUL.appendChild(newItem);
+    this.value = "";
+  }
+});
+
 // Example 8 -  Coin Game Demo
 console.log("\nSECTION 8 - Coin Game Demo");
 
