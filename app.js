@@ -54,7 +54,23 @@ buttonImp.addEventListener("click", () => {
 
 // Example 5 -  Events on Multiple Elements
 console.log("\nSECTION 5 - Events on Multiple Elements");
-// No Code
+
+// Create multiple colored boxes
+const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+const changeColor = function () {
+  const h1 = document.querySelector("h1");
+  h1.style.color = this.style.backgroundColor;
+  console.log(this);
+  console.log(this.style.backgroundColor);
+};
+const container = document.querySelector("#boxes");
+for (let color of colors) {
+  const box = document.createElement("div");
+  box.style.backgroundColor = color;
+  box.classList.add("box");
+  container.appendChild(box);
+  box.addEventListener("click", changeColor);
+}
 
 // Example 6 -  The Event Object
 console.log("\nSECTION 6 - The Event Object");
