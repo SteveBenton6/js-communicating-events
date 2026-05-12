@@ -16,6 +16,16 @@
 
 ## 8 - Coin Game Demo
 
+Uses Files:
+indexcgs.html
+stylecgs.css
+appcgs.js
+
 ## 9 - Form Events & PreventDefault
+
+Uses Files:
+indexfe.html
+stylefe.css
+appcfe.js
 
 ## 10 - Input & Change Events
