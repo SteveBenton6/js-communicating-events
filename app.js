@@ -113,6 +113,8 @@ addItemInput.addEventListener("keypress", function (e) {
 // Example 8 -  Coin Game Demo
 console.log("\nSECTION 8 - Coin Game Demo");
 
+// See separate files:
+
 // Example 9 -  Form Events & PreventDefault
 console.log("\nSECTION 9 - Form Events & PreventDefault");
 
