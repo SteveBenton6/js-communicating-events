@@ -75,6 +75,11 @@ for (let color of colors) {
 // Example 6 -  The Event Object
 console.log("\nSECTION 6 - The Event Object");
 
+// Detect keypress and display event object in console
+const keyPress = document.body.addEventListener("keypress", (e) => {
+  console.log(e);
+});
+
 // Example 7 -  Key Events: keypress, keyup & keydown
 console.log("\nSECTION 7 - Key Events: keypress, keyup & keydown");
 
