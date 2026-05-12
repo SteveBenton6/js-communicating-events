@@ -9,3 +9,9 @@ function isTouching(a, b) {
     aRect.left > bRect.left + bRect.width
   );
 }
+
+const player = document.querySelector("#player");
+
+window.addEventListener("keyup", function (e) {
+  console.log(e.key);
+});
