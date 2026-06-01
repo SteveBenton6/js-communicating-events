@@ -133,6 +133,9 @@ addItemInput.addEventListener("keypress", function (e) {
 console.log("\nSECTION 8 - Coin Game Demo");
 
 // See separate files:
+// indexcgs.html
+// stylecgs.cc
+// appcgs.js
 
 // Example 9 -  Form Events & PreventDefault
 console.log("\nSECTION 9 - Form Events & PreventDefault");
