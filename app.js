@@ -72,7 +72,9 @@ console.log("\nSECTION 5 - Events on Multiple Elements");
 const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 const changeColor = function () {
   const h1 = document.querySelector("h1");
+  const body = document.querySelector("body");
   h1.style.color = this.style.backgroundColor;
+  body.style.backgroundColor = this.style.backgroundColor;
   console.log(this);
   console.log(this.style.backgroundColor);
 };
