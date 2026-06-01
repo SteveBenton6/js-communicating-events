@@ -102,12 +102,15 @@ console.log("\nSECTION 7 - Key Events: keypress, keyup & keydown");
 // Detect key events on the username Input
 const input = document.querySelector("#username");
 input.addEventListener("keydown", function (e) {
+  console.log(e.key);
   console.log("Key Down!");
 });
 input.addEventListener("keyup", function (e) {
+  console.log(e.key);
   console.log("Key Up!");
 });
 input.addEventListener("keypress", function (e) {
+  console.log(e.key);
   console.log("Key Press!");
 });
 
