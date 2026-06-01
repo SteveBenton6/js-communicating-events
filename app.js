@@ -62,7 +62,7 @@ buttonImp.addEventListener("mouseover", () => {
 });
 buttonImp.addEventListener("click", () => {
   buttonImp.innerText = "You Got Me!";
-  document.body.style.bckgroundColor = "green";
+  document.body.style.backgroundColor = "green";
 });
 
 // Example 5 -  Events on Multiple Elements
