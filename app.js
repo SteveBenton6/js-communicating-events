@@ -93,6 +93,7 @@ console.log("\nSECTION 6 - The Event Object");
 // Detect keypress and display event object in console
 const keyPress = document.body.addEventListener("keypress", (e) => {
   console.log(e);
+  console.log(e.code);
 });
 
 // Example 7 -  Key Events: keypress, keyup & keydown
