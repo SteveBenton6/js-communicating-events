@@ -5,7 +5,7 @@ console.log("\nSECTION 1 - Intro to DOM Events");
 // Example 2 -  2 Ways NOT to Add Events
 console.log("\nSECTION 2 - 2 Ways NOT to Add Events");
 
-// Selecter Clicker Button and create Event
+// Select Clicker Button and create Event
 const buttClicker = document.querySelector("#clicker");
 console.dir(buttClicker);
 buttClicker.onclick = function () {
@@ -32,6 +32,19 @@ buttonh1.addEventListener("mouseover", () => {
 });
 buttonh1.addEventListener("mouseout", () => {
   buttonh1.innerText = "Click Me!";
+});
+const buttonh2 = document.querySelector("#buttonTwo");
+buttonh2.addEventListener("click", () => {
+  alert("1st - You clicked the 2nd button!");
+});
+buttonh2.addEventListener("click", () => {
+  console.log("2nd - You clicked the 2nd button!");
+});
+buttonh2.addEventListener("mouseover", () => {
+  buttonh2.innerText = "Stop Hovering Over Me as Well!";
+});
+buttonh2.addEventListener("mouseout", () => {
+  buttonh2.innerText = "Click 2 Me!";
 });
 
 // Example 4 -  The impossible Button Demo
